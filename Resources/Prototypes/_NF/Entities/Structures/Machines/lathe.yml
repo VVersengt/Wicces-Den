@@ -354,6 +354,7 @@
     staticPacks:
     - SecurityAmmoStatic
     - NFNfsdTechfabDeprecatedStatic
+    - RoundstartShipgunAmmo # Mono
     - CivilianAmmoRecipePack
     dynamicPacks:
       - NFNfsdTechfabDynamicDeprecated
@@ -398,6 +399,8 @@
     staticPacks:
     - NFMercenaryTechfabDeprecatedStatic
     - CivilianAmmoRecipePack
+    - MonoRestraintsStatic # Mono
+    - RoundstartShipgunAmmo # Mono
     dynamicPacks:
     - NFMercenaryTechfabDynamicDeprecated
     - AdvancedAmmoRecipePack
@@ -451,6 +454,8 @@
     runningState: mercenary-hacked
     staticPacks:
     - NFHackedMercenaryTechfabDeprecatedStatic
+    - MonoRestraintsStatic
+    - RoundstartShipgunAmmo # Mono
     - CivilianAmmoRecipePack
     dynamicPacks:
     - NFMercenaryTechfabDynamicDeprecated
