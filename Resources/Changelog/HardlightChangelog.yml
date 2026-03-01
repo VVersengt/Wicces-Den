@@ -1481,3 +1481,9 @@ Entries:
       message: SecTech and drobe now fully replace NFSD counterparts.
   id: 156
   time: '2026-03-01T06:16:13.0000000+00:00'
+- author: warcrazed11
+  changes:
+    - type: Tweak
+      message: Removed the SM zap and instead raised radiation.
+  id: 157
+  time: '2026-03-01T06:17:18.0000000+00:00'
