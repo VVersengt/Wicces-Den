@@ -1,0 +1,51 @@
+- type: gameMap
+  id: Arion
+  mapName: 'Orbit'
+  mapPath: /Maps/_Wicce/Outpost/arion.yml
+  minPlayers: 0
+  maxPlayers: 100
+  stations:
+    Arion:
+      stationProto: StandardNanotrasenStation
+      components:
+      - type: StationNameSetup
+        mapNameTemplate: 'DTU "Arion"'
+      #  nameGenerator:
+      #    !type:NanotrasenNameGenerator
+      #    prefixCreator: '14-SB'
+      - type: ExtraStationInformation
+        iconPath: /Textures/_HL/Logo/icon/icon-256x256.png # used the biggest one, looks better when downscaling than upscaling
+        stationSubtext: 'hardlight-lobby-hardlight-subtext'
+        stationDescription: 'hardlight-lobby-hardlight-description'
+        lobbySortOrder: 1
+      - type: StationJobs
+        availableJobs:
+          Passenger: [ -1, -1 ]
+
+#      - type: StationJobs
+#        availableJobs:
+#          # NOBLES
+#          Helmsman: [ 1, 1 ]
+#          Heir: [ 1, 1 ]
+#          Steward: [ 1, 1 ]
+#          Hand: [ 1, 1 ]
+#          # KNIGHTS
+#          Marshal: [ 1, 1 ]
+#          Knight: [ 3, 3 ]
+#          Squire: [ 3, 3 ]
+#          # VISTULA
+#          Provost: [ 1, 1 ]
+#          Researcher: [ 3, 3 ]
+#          Mechanitor: [ 2, 2 ]
+#          # ECCLESIA
+#          Vicar: [ 1, 1 ]
+#          Curate: [ 4, 4 ]
+#          # COMMONERS
+#          Rating: [ -1, -1 ]
+#          Vagabond: [ -1, -1 ]
+#          FirstEngineer: [ 1 , 1 ]
+#          Clerk: [ 1, 1 ]
+#        tags:
+#        - HeadOfPersonnel
+#        - HeadOfSecurity
+#

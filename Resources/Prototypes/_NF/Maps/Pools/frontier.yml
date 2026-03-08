@@ -1,13 +1,16 @@
 - type: gameMapPool
   id: NFMapPool
   maps:
-  - HardCore
-  - Reach
-  - Amber
-  - Bagel
-  - Box
-  - Eaglerock
-  - Convex
-  - Elkridge
-  - Fland
-  - HardlightSilica
+# WICCE START
+#  - HardCore
+#  - Reach
+#  - Amber
+#  - Bagel
+#  - Box
+#  - Eaglerock
+#  - Convex
+#  - Elkridge
+#  - Fland
+#  - HardlightSilica
+  - Arion
+# WICCE END

@@ -2115,3 +2115,17 @@
   friction: 0.8
   itemDrop: FloorTileItemUraniumMarble
   heatCapacity: 10000
+
+# Wicce
+
+- type: tile
+  id: FloorTechMaintDark
+  name: tiles-techmaint-floor-dark
+  sprite: /Textures/Tiles/tech_maint_dark.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepHull
+  itemDrop: FloorTileItemTechMaintAlt # Wicce: Make this its own thing soon. Thank you.
+  heatCapacity: 10000

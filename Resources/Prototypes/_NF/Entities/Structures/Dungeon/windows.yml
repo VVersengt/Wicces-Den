@@ -63,10 +63,10 @@
   components:
   - type: Sprite
     drawdepth: WallTops
-    sprite: _NF/Structures/Windows/reinforced_window.rsi # Frontier
+    sprite: Structures/Windows/reinforced_window.rsi
     color: "#ffd38c"
   - type: Icon
-    sprite: _NF/Structures/Windows/reinforced_window.rsi # Frontier
+    sprite: Structures/Windows/reinforced_window.rsi
     color: "#ffd38c"
 
 # Mining window
