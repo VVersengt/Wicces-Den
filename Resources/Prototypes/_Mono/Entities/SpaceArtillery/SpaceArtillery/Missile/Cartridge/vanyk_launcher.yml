@@ -19,7 +19,6 @@
     fireRate: 0.8
     minAngle: 0
     maxAngle: 0
-    shootThermalSignature: 8000000 # ~5km if firing continuously
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/rocket_launcher.ogg
     soundEmpty:

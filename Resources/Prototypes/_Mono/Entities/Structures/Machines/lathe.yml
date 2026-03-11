@@ -31,7 +31,6 @@
     idleState: icon
     runningState: icon
     staticPacks:
-    - StaticAmmoRecipePack
     - NFMercenaryTechfabDeprecatedStatic
     - RoundstartShipgunAmmo
     dynamicPacks:

@@ -325,7 +325,6 @@
   - type: EmagLatheRecipes
     emagStaticPacks:
     - CivilianAmmoRecipePack
-  #  - MonoRestraintsStatic # Mono
   - type: BlueprintReceiver
     whitelist:
       tags:
@@ -766,7 +765,6 @@
     dynamicPacks:
     - AdvancedAmmoRecipePack
     # Mono start
-    - ResearchedExplosives
     - UniversalRailgunAmmo
     - UniversalMissileAmmo
     - UniversalShellAmmo

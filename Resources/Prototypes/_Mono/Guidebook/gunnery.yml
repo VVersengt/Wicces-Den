@@ -31,15 +31,3 @@
   name: guide-entry-missiles
   text: "/ServerInfo/_Mono/Guidebook/Specifications/missiles.xml"
   priority: 3
-
-- type: guideEntry
-  id: VESPERAGuide
-  name: guide-entry-vespera
-  text: "/ServerInfo/_Mono/Guidebook/Specifications/VESPERA.xml"
-  priority: 1
-
-- type: guideEntry
-  id: TOVEKGuide
-  name: guide-entry-tovek
-  text: "/ServerInfo/_Mono/Guidebook/Specifications/TOVEK.xml"
-  priority: 1

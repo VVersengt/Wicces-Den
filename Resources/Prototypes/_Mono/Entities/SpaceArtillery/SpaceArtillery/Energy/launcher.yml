@@ -115,7 +115,6 @@
     minAngle: 0
     maxAngle: 0
     projectileSpeed: 175
-    #shootThermalSignature: 4000000 # ~2.8km with continuous fire
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/laser_cannon2.ogg
     soundEmpty:
@@ -474,7 +473,6 @@
     shotsPerBurst: 25
     selectedMode: Burst
     availableModes: Burst
-    #shootThermalSignature: 500000 # ~5.6km with continuous fire
     soundGunshot:
       path: /Audio/_Mono/Weapons/Guns/Gunshots/autopulse_laser_fire_01.ogg
     soundEmpty:
@@ -691,7 +689,6 @@
     #recoil: 5
     minAngle: 0
     maxAngle: 0
-    #shootThermalSignature: 2000000
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/ship_perforator.ogg
     soundEmpty:
@@ -832,7 +829,6 @@
     shotsPerBurst: 136
     selectedMode: Burst
     availableModes: Burst
-    #shootThermalSignature: 2000000 # ~10km while firing
     soundGunshot:
       path: /Audio/_Mono/Weapons/Guns/Gunshots/glassing.ogg
     soundEmpty:
@@ -1034,7 +1030,6 @@
     minAngle: 0
     maxAngle: 4
     projectileSpeed: 200
-    #shootThermalSignature: 18000000 # ~8.5km with continuous fire
     soundGunshot:
       path: /Audio/_Mono/Weapons/Guns/Gunshots/leviathan_fire.ogg
     soundEmpty:

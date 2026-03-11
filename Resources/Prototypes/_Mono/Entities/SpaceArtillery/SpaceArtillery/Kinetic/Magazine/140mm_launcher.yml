@@ -41,7 +41,6 @@
     shotsPerBurst: 10
     selectedMode: Burst
     availableModes: Burst
-    shootThermalSignature: 48000000 # ~7km after firing
     soundGunshot:
       path: /Audio/_Mono/Weapons/Guns/Gunshots/120mm_mortar.ogg
     soundEmpty:

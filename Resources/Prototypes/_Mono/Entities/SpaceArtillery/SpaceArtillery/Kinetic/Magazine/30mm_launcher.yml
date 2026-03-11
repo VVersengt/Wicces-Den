@@ -28,7 +28,6 @@
     projectileSpeed: 180
     minAngle: 0
     maxAngle: 8
-    shootThermalSignature: 100000 # ~4.5km if firing continuously
     soundGunshot:
       path: /Audio/_Mono/Weapons/Guns/Gunshots/slammer.ogg
     soundEmpty:

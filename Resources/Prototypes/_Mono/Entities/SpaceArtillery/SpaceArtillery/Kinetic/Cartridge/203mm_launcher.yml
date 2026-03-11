@@ -36,7 +36,6 @@
     minAngle: 0
     maxAngle: 3
     fireRate: 0.2
-    shootThermalSignature: 40000000 # ~6.3km after firing
     soundGunshot:
       path: /Audio/_Mono/Weapons/Guns/Gunshots/cannon.ogg
     soundEmpty:

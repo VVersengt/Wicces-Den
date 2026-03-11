@@ -24,7 +24,6 @@
     minAngle: 0
     maxAngle: 0
     projectileSpeed: 800
-    shootThermalSignature: 20000000 # ~4.5km after firing
     soundGunshot:
       path: /Audio/_Mono/Weapons/Guns/Gunshots/leviathan_fire.ogg
     soundEmpty:
