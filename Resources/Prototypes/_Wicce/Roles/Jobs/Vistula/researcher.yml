@@ -1,0 +1,59 @@
+- type: job
+  id: Researcher
+  name: job-name-researcher
+  description: job-description-researcher
+  playTimeTracker: JobResearcher
+  requirements:
+  - !type:OverallPlaytimeRequirement
+    time: 3600 # 1 hr
+  guides: [ VistulaInstitute ]
+  icon: "JobIconScientist"
+  supervisors: job-supervisors-provost
+  accessGroups:
+  - VistulaAccess
+
+- type: accessGroup
+  id: VistulaAccess
+  tags:
+  - Maintenance
+  - External
+  - Research
+
+- type: playTimeTracker
+  id: JobResearcher
+
+- type: entity
+  id: SpawnPointResearcher
+  parent: SpawnPointScientist
+  name: Researcher
+  components:
+  - type: SpawnPoint
+    job_id: Researcher
+
+- type: roleLoadout
+  id: JobResearcher
+  groups:
+  - ContractorHead
+  - ContractorNeck
+  - MdMedicJumpsuit
+  - MdMedicGloves
+  - MdMedicBackpack
+  - ContractorOuterClothing
+  - ContractorShoes
+  - ContractorFace
+  - ContractorGlasses
+  - ContractorBelt
+  - MdMedicEars
+  - ContractorBoxSurvival
+  - MdMedicPDA
+  - MercenaryFirearm
+  - MercenaryPistol
+  - MercenaryMag
+  - ContractorWallet
+  - ContractorCartridge
+  - ContractorImplanter
+  - ContractorEncryptionKey
+  - ContractorFun
+  - ContractorTrinkets
+  - ContractorBureaucracy
+  - NFSpeciesSpecific

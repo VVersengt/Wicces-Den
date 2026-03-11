@@ -1,0 +1,78 @@
+- type: job
+  id: Vicar
+  name: job-name-vicar
+  description: job-description-vicar
+  playTimeTracker: JobVicar
+  requirements:
+  - !type:DepartmentTimeRequirement
+    department: Ecclesia
+    time: 43200 # 12 hours
+  weight: 10
+  startingGear: VicarGear
+  guides: [ Ecclesia ]
+  icon: "JobIconChiefMedicalOfficer"
+  supervisors: job-supervisors-nobles
+  canBeAntag: false
+  accessGroups:
+  - VicarAccess
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant ]
+  - !type:AddComponentSpecial
+    components:
+    - type: SurgerySpeedModifier
+      SpeedModifier: 2.5
+
+- type: startingGear
+  id: VicarGear
+  equipment:
+    id: CMOPDA
+    ears: ClothingHeadsetCMO
+    belt: ClothingBeltMedicalFilled
+  storage:
+    back:
+    - Flash
+
+- type: accessGroup
+  id: VicarAccess
+  tags:
+  - Maintenance
+  - External
+  - Command
+  - Medical
+
+- type: playTimeTracker
+  id: JobVicar
+
+- type: entity
+  id: SpawnPointVicar
+  parent: SpawnPointChiefMedicalOfficer
+  name: Vicar
+  components:
+  - type: SpawnPoint
+    job_id: Vicar
+
+- type: roleLoadout
+  id: JobVicar
+  groups:
+  - DocHead
+  - DocNeck
+  - DocJumpsuit
+  - DocGloves
+  - MdMedicBackpack
+  - ContractorOuterClothing
+  - DocShoes
+  - ContractorFace
+  - ContractorGlasses
+  - ContractorBelt
+  - DocEars
+  - ContractorBoxSurvival
+  - DocPDA
+  - ContractorWallet
+  - ContractorCartridge
+  - ContractorImplanter
+  - ContractorEncryptionKey
+  - ContractorFun
+  - ContractorTrinkets
+  - ContractorBureaucracy
+  - NFSpeciesSpecific

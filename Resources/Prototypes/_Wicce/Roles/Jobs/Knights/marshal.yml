@@ -1,0 +1,78 @@
+- type: job
+  id: Marshal
+  name: job-name-marshal
+  description: job-description-marshal
+  playTimeTracker: JobMarshal
+  requirements:
+    - !type:DepartmentTimeRequirement
+      department: Knights
+      time: 43200 # 12 hours
+  whitelisted: true
+  startingGear: MarshalGear
+  alwaysUseSpawner: true
+  icon: "JobIconHeadOfSecurity"
+  requireAdminNotify: true
+  supervisors: job-supervisors-shipbaron
+  weight: 180
+  displayWeight: 70
+  canBeAntag: false
+  accessGroups:
+  - AllAccess
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant ]
+  - !type:AddComponentSpecial
+    components:
+      - type: CommandStaff
+
+- type: startingGear
+  id: MarshalGear
+  equipment:
+    pocket1: WeaponEnergyGunMultiphase # DeltaV gun
+    pocket2: EnergySwordNfsd
+  storage:
+    back:
+    - Multitool
+    - DoorRemoteNfsd
+    - BaseSecurityUplinkRadioSheriff
+
+- type: playTimeTracker
+  id: JobMarshal
+
+- type: entity
+  id: SpawnPointMarshal
+  parent: SpawnPointHeadOfSecurity
+  name: marshal
+  components:
+  - type: SpawnPoint
+    job_id: Marshal
+
+- type: roleLoadout
+  id: JobMarshal
+  groups:
+  #  - StationRepHead
+  #  - StationRepNeck
+  #  - StationRepJumpsuit
+  - StationRepGloves
+  - StationRepBackpack
+  - StationRepOuterClothing
+  #  - ContractorShoes
+  #  - ContractorFace
+  #  - ContractorGlasses
+  #  - ContractorBelt
+  - MonoSecurityGuardHud
+  - StationRepEars
+  - MonoSecurityGuardShoes
+  - HeadofSecurityHead
+  - HeadofSecurityJumpsuit
+  - HeadofSecurityNeck
+  - ColonialLiaisonFirearm # Mono
+  - ContractorBoxSurvival
+  - StationRepPDA
+  - ContractorWallet
+  - ContractorCartridge
+  - ContractorImplanter
+  # - ContractorFun # Mono - no fun allowed
+  - StationRepTrinkets
+  - ContractorBureaucracy
+  - NFSpeciesSpecific

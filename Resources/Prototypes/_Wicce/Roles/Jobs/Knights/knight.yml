@@ -1,0 +1,81 @@
+- type: job
+  id: Knight
+  name: job-name-knight
+  description: job-description-knight
+  playTimeTracker: JobKnight
+  requirements:
+  - !type:DepartmentTimeRequirement
+    department: Knights
+    time: 21600 # 6 hours
+  startingGear: KnightGear
+  icon: "JobIconSecurityOfficer"
+  supervisors: job-supervisors-marshal
+  weight: 140
+  displayWeight: 50
+  canBeAntag: false
+  accessGroups:
+  - KnightAccess
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant ]
+
+- type: startingGear
+  id: KnightGear
+  equipment:
+    pocket1: WeaponPistolMk58 #WeaponPistolMk58Nonlethal
+  storage:
+    back:
+    - Magazine45_ACPPistolFMJ
+    - BaseSecurityUplinkRadioOfficer
+    - RadioHandheldNF # Mono
+
+- type: playTimeTracker
+  id: JobKnight
+
+- type: roleLoadout
+  id: JobKnight
+  groups:
+  # Mono Start
+  - MonoSecurityGuardOuterClothing
+  - MonoSecurityGuardBelt
+  - MonoSecurityGuardGaiter
+  - MonoSecurityGuardHud
+  - MonoSecurityGuardShoes
+  - MonoSecurityGuardJumpsuit
+  - MonoSecurityGuardBack
+  - SecurityGuardFirearm
+  - SecurityGuardPistol
+  - SecurityGuardAmmo
+  # Mono End
+  - SecurityGuardGloves
+  - SecurityGuardHead
+  - SecurityGuardEars
+  - NfsdBoxSurvival
+  - SecurityGuardPDA
+  - ContractorWallet
+  - ContractorCartridge
+  - ContractorImplanter
+  - ContractorEncryptionKey
+  - ContractorFun
+  - ContractorTrinkets
+  - ContractorBureaucracy
+  - NFSpeciesSpecific
+
+- type: entity
+  id: SpawnPointKnight
+  parent: SpawnPointSecurityOfficer
+  name: knight
+  components:
+  - type: SpawnPoint
+    job_id: Knight
+
+- type: accessGroup
+  id: KnightAccess
+  tags:
+  - Maintenance
+  - External
+  - Command
+  - Brig
+  - Security
+  - Armory
+  - Mercenary

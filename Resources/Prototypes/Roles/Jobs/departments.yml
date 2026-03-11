@@ -3,41 +3,39 @@
   name: department-Cargo
   description: department-Cargo-description
   color: "#A46106"
-  roles:
-  - CargoTechnician
-  - Quartermaster
-  - SalvageSpecialist
-  - MailCarrier
-  - SalvageQuadBorg
+  weight: -90
+  primary: false
+  editorHidden: true # Frontier
 
 - type: department
   id: Civilian
   name: department-Civilian
   description: department-NFCivilian-description # Frontier
   color: "#9FED58"
-  weight: -10
+  weight: 130 # Mono
   roles:
-   - Bartender # Frontier
-   - Botanist # Frontier
-   - Boxer # Frontier
-   - Chaplain # Frontier
-   - Chef # Frontier
-   - Clown # Frontier
-   - HeadOfPersonnel # Frontier
-   - Lawyer # Frontier
-   - Librarian # Frontier
-   - Mime # Frontier
-   - Musician # Frontier
-   - Passenger # Frontier
-   - Reporter # Frontier
-   - Visitor # Frontier
-   - Zookeeper # Frontier
-   - ServiceWorker # Frontier
-   - Contractor # Frontier
-   - Mercenary # Frontier
-   - Pilot # Frontier
-   - Janitor
-   - ServiceQuadBorg # Floof
+  # - Bartender # Frontier
+  # - Botanist # Frontier
+  # - Boxer # Frontier
+  # - Chaplain # Frontier
+  # - Chef # Frontier
+  # - Clown # Frontier
+  # - HeadOfPersonnel # Frontier
+  # - Lawyer # Frontier
+  # - Librarian # Frontier
+  # - Mime # Frontier
+  # - Musician # Frontier
+  # - Passenger # Frontier
+  # - Reporter # Frontier
+  # - Visitor # Frontier
+  # - Zookeeper # Frontier
+  # - ServiceWorker # Frontier
+  - Contractor # Frontier
+  - Mercenary # Frontier
+  - Pilot # Frontier
+  - Borg # Frontier
+  editorHidden: true # Wicce
+
 - type: department
   id: CentralCommand
   name: department-CentralCommand
@@ -45,14 +43,14 @@
   color: "#0c344d"
   roles:
   - CentralCommandOfficial
-  - CBURN # Frontier
+#  - CBURN # Frontier
   - ERTLeader
   - ERTChaplain
   - ERTJanitor
   - ERTMedical
   - ERTSecurity
   - ERTEngineer
-  - DeathSquad # Frontier
+#  - DeathSquad # Frontier
   - ERTMailCarrier # Frontier
   editorHidden: true
   weight: 120
@@ -63,72 +61,82 @@
   description: department-NFCommand-description # Frontier
   color: "#334E6D"
   roles:
-   - ChiefEngineer # Frontier
-   - ChiefMedicalOfficer # Frontier
-   - HeadOfPersonnel # Frontier
-   - HeadOfSecurity # Frontier
-   - ResearchDirector # Frontier
-   - Quartermaster # Frontier
-   - StationTrafficController # Frontier
-   - StationCaptain # hardlight
+  # - Captain # Frontier
+  # - ChiefEngineer # Frontier
+  # - ChiefMedicalOfficer # Frontier
+  # - HeadOfPersonnel # Frontier
+  # - HeadOfSecurity # Frontier
+  # - ResearchDirector # Frontier
+  # - Quartermaster # Frontier
+  # - CentralCommandOfficial # Frontier
+  # - CBURN # Frontier
+  # - ERTLeader # Frontier
+  # - ERTChaplain # Frontier
+  # - ERTJanitor # Frontier
+  # - ERTMedical # Frontier
+  # - ERTSecurity # Frontier
+  # - ERTEngineer # Frontier
+  # - DeathSquad # Frontier
+  - StationRepresentative # Frontier
+  - Sheriff  # Frontier
+  - StationTrafficController # Frontier
+  - DirectorOfCare # Mono
   primary: false
   weight: 100
- # editorHidden: true # Frontier
+  editorHidden: true # Wicce
 
 - type: department
   id: Engineering
   name: department-Engineering
   description: department-Engineering-description
   color: "#EFB341"
-  roles:
-  - AtmosphericTechnician
-  - ChiefEngineer
-  - StationEngineer
-  - TechnicalAssistant
-  - EngineeringQuadBorg
-
+  weight: -94
+  primary: false
+  editorHidden: true # Frontier
 
 - type: department
   id: Medical
   name: department-Medical
   description: department-Medical-description
   color: "#52B4E9"
-  roles:
-  - Chemist
-  - ChiefMedicalOfficer
-  - MedicalDoctor
-  - MedicalIntern
-  - Psychologist
-  - Paramedic
-  - MedicalQuadBorg # Floof
-  - Geneticist # Funkystation - Genetics
+  weight: 0
+  roles: # Mono
+  - DirectorOfCare # Mono
+  - MdMedic # Mono
+  editorHidden: true # Wicce
 
 - type: department
   id: Security
   name: department-Security
-  description: department-Security-description
-  color: "#DE3A3A"
-  weight: 20
+  description: department-NFSecurity-description # Frontier
+  color: "#326DA8" # Mono
+  weight: 120 # Mono
   roles:
-  - HeadOfSecurity
-  - SecurityCadet
-  - SecurityOfficer
-  - Detective
-  - Warden
-  - PrisonGuard
-  - Prisoner
-  - SecurityQuadBorg
+#  - Detective # Frontier
+#  - HeadOfSecurity # Frontier
+#  - SecurityCadet # Frontier
+#  - SecurityOfficer # Frontier
+#  - Warden # Frontier
+  - PrisonGuard ##nyano
+  - Brigmedic # Frontier
+#  - SecurityGuard # Frontier
+  - NFDetective # Frontier
+  - Cadet # Frontier
+  - Deputy # Frontier
+  - Bailiff # Frontier
+  - Sheriff # Frontier
+  - SeniorOfficer # Frontier
+  - PublicAffairsLiaison # Frontier
+  editorHidden: true # Wicce
 
 - type: department
   id: Science
   name: department-Science
   description: department-Science-description
   color: "#D381C9"
-  roles:
-  - ResearchDirector
-  - ForensicMantis # Hardlight
-  - Scientist
-  - ResearchAssistant
+  weight: -92
+  primary: false
+  editorHidden: true # Frontier
 
 - type: department
   id: Silicon
@@ -138,17 +146,14 @@
   roles:
   - Borg
   - StationAi
+  editorHidden: true # Frontier
+  primary: false # Frontier
 
 - type: department
   id: Specific
   name: department-Specific
   description: department-Specific-description
   color: "#9FED58"
-  weight: 10
-  roles:
-  - RadioHost # Goobstation
-  - Boxer
-  - Reporter
-  - Zookeeper
-  - Psychologist
+  weight: -91
   primary: false
+  editorHidden: true # Frontier

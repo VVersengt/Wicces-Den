@@ -1,0 +1,66 @@
+- type: department
+  id: Nobles
+  name: department-Nobles
+  description: department-nobles-description
+  color: "#334E6D"
+  weight: 5
+  roles:
+  - Heir
+  - Steward
+  - Hand
+  - Helmsman
+
+- type: department
+  id: Knights
+  name: department-Knights
+  description: department-knights-description
+  color: "#DE3A3A"
+  weight: 4
+  roles:
+  - Marshal
+  - Knight
+  - Squire
+
+- type: department
+  id: Vistula
+  name: department-Vistula
+  description: department-vistula-description
+  color: "#D381C9"
+  weight: 3
+  roles:
+  - Provost
+  - Researcher
+  - Mechanitor
+
+- type: department
+  id: Ecclesia
+  name: department-Ecclesia
+  description: department-ecclesia-description
+  color: "#52B4E9"
+  weight: 2
+  roles:
+  - Vicar
+  - Curate
+
+- type: department
+  id: Commoners
+  name: department-Commoners
+  description: department-commoners-description
+  color: "#A46106"
+  weight: 1
+  roles:
+  - Rating
+  - Vagabond
+  - Clerk
+  - FirstEngineer
+
+# COLORS
+# #A46106 - CARGO
+# #9FED58 - SERVICE
+# #0c344d - CENTRAL COMMAND
+# #334E6D - COMMAND
+# #EFB341 - ENGINEERING
+# #52B4E9 - MEDICAL
+# #DE3A3A - SECURITY
+# #D381C9 - SCIENCE
+# #D381C9 - BORGS

@@ -1,0 +1,58 @@
+- type: job
+  id: Vagabond
+  name: job-name-vagabond
+  description: job-description-vagabond
+  playTimeTracker: JobVagabond
+  requirements:
+  - !type:OverallPlaytimeRequirement
+    time: 3600 # 1 hrs
+  icon: "JobIconPassenger"
+  supervisors: job-supervisors-noone
+  displayWeight: 41
+  accessGroups:
+  - VagabondAccess
+
+- type: playTimeTracker
+  id: JobVagabond
+
+- type: entity
+  id: SpawnPointVagabond
+  parent: SpawnPointPassenger
+  name: vagabond
+  components:
+  - type: SpawnPoint
+    job_id: Vagabond
+
+- type: roleLoadout
+  id: JobVagabond
+  groups:
+  - ContractorHead
+  - ContractorNeck
+  - ContractorJumpsuit
+  - ContractorGloves
+  - ContractorBackpack
+  - ContractorOuterClothing
+  - ContractorShoes
+  - ContractorFace
+  - ContractorGlasses
+  - ContractorBelt
+  - ContractorEars
+  - ContractorEncryptionKey
+  - ContractorBoxSurvival
+  - ContractorPDA
+  - ContractorWallet
+  - ContractorCartridge
+  - ContractorImplanter
+  - ContractorUtility
+  - ContractorFun
+  - ContractorTrinkets
+  - ContractorBureaucracy
+  - NFSpeciesSpecific
+  - ContractorFirearm # Mono
+  - ContractorMag # Mono
+  - CivGunCaseSpecial # Mono
+
+- type: accessGroup
+  id: VagabondAccess
+  tags:
+  - Maintenance

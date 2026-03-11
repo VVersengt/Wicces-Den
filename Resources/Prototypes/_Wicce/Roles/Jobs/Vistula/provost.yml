@@ -1,0 +1,63 @@
+- type: job
+  id: Provost
+  name: job-name-provost
+  description: job-description-provost
+  playTimeTracker: JobProvost
+  requirements:
+  - !type:DepartmentTimeRequirement
+    department: Vistula
+    time: 43200 # 12 hours
+  weight: 10
+  guides: [ VistulaInstitute ]
+  icon: "JobIconResearchDirector"
+  supervisors: job-supervisors-nobles
+  canBeAntag: false
+  accessGroups:
+  - ProvostAccess
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant ]
+
+- type: accessGroup
+  id: ProvostAccess
+  tags:
+  - Maintenance
+  - External
+  - Command
+  - Research
+
+- type: playTimeTracker
+  id: JobProvost
+
+- type: entity
+  id: SpawnPointProvost
+  parent: SpawnPointResearchDirector
+  name: Provost
+  components:
+  - type: SpawnPoint
+    job_id: Provost
+
+- type: roleLoadout
+  id: JobProvost
+  groups:
+  - DocHead
+  - DocNeck
+  - DocJumpsuit
+  - DocGloves
+  - MdMedicBackpack
+  - ContractorOuterClothing
+  - DocShoes
+  - ContractorFace
+  - ContractorGlasses
+  - ContractorBelt
+  - DocEars
+  - ContractorBoxSurvival
+  - DocPDA
+  - ContractorWallet
+  - ContractorCartridge
+  - ContractorImplanter
+  - ContractorEncryptionKey
+  - ContractorFun
+  - ContractorTrinkets
+  - ContractorBureaucracy
+  - NFSpeciesSpecific

@@ -1,0 +1,50 @@
+- type: job
+  id: Rating
+  name: job-name-rating
+  description: job-description-rating
+  playTimeTracker: JobRating
+  icon: "JobIconContractor"
+  supervisors: job-supervisors-steward
+  displayWeight: 40
+  accessGroups:
+  - GeneralAccess
+
+- type: playTimeTracker
+  id: JobRating
+
+- type: entity
+  id: SpawnPointRating
+  parent: SpawnPointPassenger
+  name: rating
+  components:
+  - type: SpawnPoint
+    job_id: Rating
+
+- type: roleLoadout
+  id: JobRating
+  groups:
+  - ContractorHead
+  - ContractorNeck
+  - ContractorJumpsuit
+  - ContractorGloves
+  - ContractorBackpack
+  - ContractorOuterClothing
+  - ContractorShoes
+  - ContractorFace
+  - ContractorGlasses
+  - ContractorBelt
+  - ContractorEars
+  - ContractorEncryptionKey
+  - ContractorBoxSurvival
+  - ContractorPDA
+  - ContractorWallet
+  - ContractorCartridge
+  - ContractorImplanter
+  - ContractorUtility
+  - ContractorFun
+  - ContractorTrinkets
+  - ContractorBureaucracy
+  - NFSpeciesSpecific
+  - ContractorFirearm # Mono
+  - ContractorMag # Mono
+  - CivGunCaseSpecial # Mono

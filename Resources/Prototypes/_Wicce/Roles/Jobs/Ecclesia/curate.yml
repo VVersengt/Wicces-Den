@@ -1,0 +1,71 @@
+- type: job
+  id: Curate
+  name: job-name-curate
+  description: job-description-curate
+  playTimeTracker: JobCurate
+  requirements:
+  - !type:OverallPlaytimeRequirement
+    time: 3600 # 1 hr
+  startingGear: CurateGear
+  guides: [ Ecclesia ]
+  icon: "JobIconMedicalDoctor"
+  supervisors: job-supervisors-vicar
+  accessGroups:
+  - CurateAccess
+  special:
+  - !type:AddComponentSpecial
+    components:
+    - type: SurgerySpeedModifier
+      SpeedModifier: 1.75
+
+- type: startingGear
+  id: CurateGear
+  equipment:
+    ears: ClothingHeadsetMedical
+    belt: ClothingBeltMedicalFilled
+
+- type: accessGroup
+  id: CurateAccess
+  tags:
+  - Maintenance
+  - External
+  - Medical
+
+- type: playTimeTracker
+  id: JobCurate
+
+- type: entity
+  id: SpawnPointCurate
+  parent: SpawnPointMedicalDoctor
+  name: Curate
+  components:
+  - type: SpawnPoint
+    job_id: Curate
+
+- type: roleLoadout
+  id: JobCurate
+  groups:
+  - ContractorHead
+  - ContractorNeck
+  - MdMedicJumpsuit
+  - MdMedicGloves
+  - MdMedicBackpack
+  - ContractorOuterClothing
+  - ContractorShoes
+  - ContractorFace
+  - ContractorGlasses
+  - ContractorBelt
+  - MdMedicEars
+  - ContractorBoxSurvival
+  - MdMedicPDA
+  - MercenaryFirearm
+  - MercenaryPistol
+  - MercenaryMag
+  - ContractorWallet
+  - ContractorCartridge
+  - ContractorImplanter
+  - ContractorEncryptionKey
+  - ContractorFun
+  - ContractorTrinkets
+  - ContractorBureaucracy
+  - NFSpeciesSpecific

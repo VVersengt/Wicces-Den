@@ -1,0 +1,79 @@
+- type: job
+  id: Squire
+  name: job-name-squire
+  description: job-description-squire
+  playTimeTracker: JobSquire
+  requirements:
+  - !type:OverallPlaytimeRequirement
+    time: 3600 # 1 hr
+  startingGear: SquireGear
+  icon: "JobIconSecurityCadet"
+  supervisors: job-supervisors-marshal
+  weight: 140
+  displayWeight: 50
+  canBeAntag: false
+  accessGroups:
+  - SquireAccess
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant ]
+
+- type: startingGear
+  id: SquireGear
+  equipment:
+    pocket1: WeaponPistolMk58 #WeaponPistolMk58Nonlethal
+  storage:
+    back:
+    - Magazine45_ACPPistolFMJ
+    - BaseSecurityUplinkRadioOfficer
+    - RadioHandheldNF # Mono
+
+- type: playTimeTracker
+  id: JobSquire
+
+- type: roleLoadout
+  id: JobSquire
+  groups:
+  # Mono Start
+  - MonoSecurityGuardOuterClothing
+  - MonoSecurityGuardBelt
+  - MonoSecurityGuardGaiter
+  - MonoSecurityGuardHud
+  - MonoSecurityGuardShoes
+  - MonoSecurityGuardJumpsuit
+  - MonoSecurityGuardBack
+  - SecurityGuardFirearm
+  - SecurityGuardPistol
+  - SecurityGuardAmmo
+  # Mono End
+  - SecurityGuardGloves
+  - SecurityGuardHead
+  - SecurityGuardEars
+  - NfsdBoxSurvival
+  - SecurityGuardPDA
+  - ContractorWallet
+  - ContractorCartridge
+  - ContractorImplanter
+  - ContractorEncryptionKey
+  - ContractorFun
+  - ContractorTrinkets
+  - ContractorBureaucracy
+  - NFSpeciesSpecific
+
+- type: entity
+  id: SpawnPointSquire
+  parent: SpawnPointSecurityCadet
+  name: squire
+  components:
+  - type: SpawnPoint
+    job_id: Squire
+
+- type: accessGroup
+  id: SquireAccess
+  tags:
+  - Maintenance
+  - External
+  - Command
+  - Brig
+  - Security
+  - Mercenary

@@ -1,0 +1,81 @@
+- type: job
+  id: Hand
+  name: job-name-hand
+  description: job-description-hand
+  playTimeTracker: JobHand
+  requirements:
+    - !type:OverallPlaytimeRequirement
+      time: 21600 # 6 hours
+  whitelisted: true
+  startingGear: HandGear
+  alwaysUseSpawner: true
+  icon: "JobIconNanotrasen"
+  requireAdminNotify: true
+  supervisors: job-supervisors-shipbaron
+  weight: 170
+  displayWeight: 60
+  canBeAntag: false
+  accessGroups:
+  - AllAccessSR
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant ]
+  - !type:AddComponentSpecial
+    components:
+      - type: CommandStaff
+
+- type: startingGear
+  id: HandGear
+  equipment:
+    pocket1: WeaponDisabler
+  storage:
+    back:
+    - Flash
+    - RubberStampSr
+    - DoorRemoteCommand
+    - EncryptionKeyCentCom
+    - EncryptionKeyStationMasterSR #Mono start
+    - EncryptionKeyDiplomacy
+    - ShipVoucherFrontierGuard
+   #- EncryptionKeyStationMaster # Mono end
+
+- type: playTimeTracker
+  id: JobHand
+
+- type: entity
+  id: SpawnPointHand
+  parent: SpawnPointHeadOfPersonnel
+  name: hand
+  components:
+  - type: SpawnPoint
+    job_id: Hand
+
+- type: roleLoadout
+  id: JobHand
+  groups:
+  #  - StationRepHead
+  #  - StationRepNeck
+  #  - StationRepJumpsuit
+  - StationRepGloves
+  - StationRepBackpack
+  - StationRepOuterClothing
+  #  - ContractorShoes
+  #  - ContractorFace
+  #  - ContractorGlasses
+  #  - ContractorBelt
+  - MonoSecurityGuardHud
+  - StationRepEars
+  - MonoSecurityGuardShoes
+  - HeadofSecurityHead
+  - HeadofSecurityJumpsuit
+  - HeadofSecurityNeck
+  - ColonialLiaisonFirearm # Mono
+  - ContractorBoxSurvival
+  - StationRepPDA
+  - ContractorWallet
+  - ContractorCartridge
+  - ContractorImplanter
+  # - ContractorFun # Mono - no fun allowed
+  - StationRepTrinkets
+  - ContractorBureaucracy
+  - NFSpeciesSpecific

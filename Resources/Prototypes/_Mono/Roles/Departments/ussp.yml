@@ -3,3 +3,4 @@
   name: department-UnionOfSovietSocialistPlanets
   description: department-UnionOfSovietSocialistPlanets-description
   color: "#B01340"
+  editorHidden: true # Wicce

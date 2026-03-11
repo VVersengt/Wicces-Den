@@ -1,0 +1,52 @@
+- type: job
+  id: Mechanitor
+  name: job-name-mechanitor
+  description: job-description-mechanitor
+  playTimeTracker: JobMechanitor
+  requirements:
+  - !type:OverallPlaytimeRequirement
+    time: 3600 # 1 hr
+  guides: [ VistulaInstitute ]
+  icon: "JobIconRoboticist"
+  supervisors: job-supervisors-provost
+  accessGroups:
+  - VistulaAccess
+
+- type: playTimeTracker
+  id: JobMechanitor
+
+- type: entity
+  id: SpawnPointMechanitor
+  parent: SpawnPointScientist
+  name: Mechanitor
+  components:
+  - type: SpawnPoint
+    job_id: Mechanitor
+
+- type: roleLoadout
+  id: JobMechanitor
+  groups:
+  - ContractorHead
+  - ContractorNeck
+  - MdMedicJumpsuit
+  - MdMedicGloves
+  - MdMedicBackpack
+  - ContractorOuterClothing
+  - ContractorShoes
+  - ContractorFace
+  - ContractorGlasses
+  - ContractorBelt
+  - MdMedicEars
+  - ContractorBoxSurvival
+  - MdMedicPDA
+  - MercenaryFirearm
+  - MercenaryPistol
+  - MercenaryMag
+  - ContractorWallet
+  - ContractorCartridge
+  - ContractorImplanter
+  - ContractorEncryptionKey
+  - ContractorFun
+  - ContractorTrinkets
+  - ContractorBureaucracy
+  - NFSpeciesSpecific
